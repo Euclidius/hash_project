@@ -1,3 +1,7 @@
+from math import floor, sin
+from kollatc import kollatc
+
+
 def choose_function(index:int):
     if index == 0:
         return first_function
@@ -72,13 +76,33 @@ def not_bitwise(bit:int) -> int:
     else:
         raise ValueError("Argument must be 1 or 0")
 
+
+def spin(phrase:str, number_of_cycle:int) -> str:
+    
+    if number_of_cycle % 3 == 0:
+        deg = (kollatc(phrase) + number_of_cycle) % 37
+    if number_of_cycle % 3 == 1:
+        deg = (kollatc(phrase) - number_of_cycle) % 37
+    if number_of_cycle % 3 == 2:
+            deg = (kollatc(phrase) * number_of_cycle) % 37
+        
+    shift = floor(abs(sin(number_of_cycle) * 2 ** deg))
+    shift = shift % len(phrase)
+    return (phrase[shift:] + phrase[:shift]).strip()
+
+    
+
 def main():
+    '''
     first_string = '0011'
     second_string = '0101'
     print(first_function(first_string, second_string))
     print(second_function(first_string, second_string))
     print(third_function(first_string, second_string))
     print(fourth_function(first_string, second_string))
+    '''
+
+    print(spin('0111000001101111011101000110100001100001001001110110010001100110', 13))
 
 if __name__ == '__main__':
     main()

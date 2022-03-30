@@ -26,6 +26,7 @@ def result_square(bin_str:list, function) -> str:
     str_square = xor_square(str_square)
     str_square = polibius(str_square)
     str_square = snail(str_square)
+    str_square = map(str, str_square)
 
     return ''.join(str_square)
 
