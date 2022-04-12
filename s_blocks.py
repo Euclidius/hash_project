@@ -154,6 +154,7 @@ def first_s_block(base:int, phrase:str) -> str:
 
     return ''.join(s_clusters)
 
+
 def second_s_block(base:int, phrase:str) -> str:
     s_clusters = []
     for i in range(0, len(phrase), 4):
@@ -308,9 +309,12 @@ def second_s_block(base:int, phrase:str) -> str:
                     case '1111':
                         s_clusters[i] = '1100'
     return ''.join(s_clusters)
+
+
 def main():
     print(first_s_block(2, '1010110100100101011010001100011111111010010000100000101101110111'))
     print(second_s_block(2, '1010110100100101011010001100011111111010010000100000101101110111'))
+
 
 if __name__ == '__main__':
     main()

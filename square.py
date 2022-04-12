@@ -1,5 +1,6 @@
 from math import sqrt, sin, floor
 import logic_funcs as lf
+from s_blocks import first_s_block
 
 '''
 This is a module for xor-square and "Polibius" square.
@@ -27,8 +28,9 @@ def result_square(bin_str:list, function) -> str:
     str_square = polibius(str_square)
     str_square = snail(str_square)
     str_square = map(str, str_square)
+    str_square = ''.join(str_square)
 
-    return ''.join(str_square)
+    return str_square
 
 
 def logic(square:list, function) -> list:
