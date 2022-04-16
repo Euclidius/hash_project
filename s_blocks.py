@@ -312,8 +312,7 @@ def second_s_block(base:int, phrase:str) -> str:
 
 
 def main():
-    print(first_s_block(2, '1010110100100101011010001100011111111010010000100000101101110111'))
-    print(second_s_block(2, '1010110100100101011010001100011111111010010000100000101101110111'))
+    pass
 
 
 if __name__ == '__main__':

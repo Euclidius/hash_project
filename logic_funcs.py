@@ -93,16 +93,7 @@ def spin(phrase:str, number_of_cycle:int) -> str:
     
 
 def main():
-    '''
-    first_string = '0011'
-    second_string = '0101'
-    print(first_function(first_string, second_string))
-    print(second_function(first_string, second_string))
-    print(third_function(first_string, second_string))
-    print(fourth_function(first_string, second_string))
-    '''
-
-    print(spin('0111000001101111011101000110100001100001001001110110010001100110', 13))
+    pass
 
 if __name__ == '__main__':
     main()

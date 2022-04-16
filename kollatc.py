@@ -18,9 +18,10 @@ def kollatc(bin_str: str) -> int:
 
     return counter
 
+
 def main():
-    input_str = '0111000001101111011101000110100001100001001001110110010001100110'
-    print(kollatc(input_str))
+    pass
+
 
 if __name__ == '__main__':
     main()

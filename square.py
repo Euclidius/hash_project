@@ -131,37 +131,7 @@ def snail(snail_map):
 
 
 def main():
-    bin_str = '0110101101101101011101110111010001101110101110110101010001101011' #len is 64
-    
-    for i in range(64):
-        bin_str = '0' * 64
-        bin_str = list(bin_str)
-        bin_str[i] = 1
-        print(result_square(bin_str, lf.first_function))
-
-    print()
-
-    for i in range(64):
-        bin_str = '0' * 64
-        bin_str = list(bin_str)
-        bin_str[i] = 1
-        print(result_square(bin_str, lf.second_function))
-
-    print()
-
-    for i in range(64):
-        bin_str = '0' * 64
-        bin_str = list(bin_str)
-        bin_str[i] = 1
-        print(result_square(bin_str, lf.third_function))
-
-    print()
-
-    for i in range(64):
-        bin_str = '0' * 64
-        bin_str = list(bin_str)
-        bin_str[i] = 1
-        print(result_square(bin_str, lf.fourth_function))
+    pass
 
 
 if __name__ == '__main__':
