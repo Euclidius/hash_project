@@ -37,10 +37,7 @@ def bin_find(bin_str:str, round_of_cycle:int) -> int:
 
 
 def main():
-    bin_str = input('The binary string: ')
-    round_of_cycle = input('The round of cycle: ')
-
-    print(bin_find(bin_str, round_of_cycle))
+    pass
 
 
 if __name__ == '__main__':
